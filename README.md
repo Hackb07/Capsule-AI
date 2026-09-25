@@ -207,6 +207,7 @@ MIT
 
 **Tharun Bala B**
 **Manikandan M**
+**VijayKumar S**
 Er. Perumal Manimekalai College of Engineering
 Department of Artificial Intelligence & Data Science
 Academic Year 2026–27
