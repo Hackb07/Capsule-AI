@@ -1,0 +1,86 @@
+{
+  "generated_utc": "2026-11-02T09:32:39.762099+00:00",
+  "protocol": "cpu, warmup 1 + 5 timed runs x 10 test images; val on 40-image test split; agreement at conf=0.25",
+  "backends": {
+    "torch-fp32-640": {
+      "weights": "models/best.pt",
+      "imgsz": 640,
+      "file_bytes": 5481370,
+      "accuracy": {
+        "ok": true,
+        "precision": 0.5571,
+        "recall": 0.5441,
+        "mAP50": 0.5163,
+        "mAP50_95": 0.3349
+      },
+      "latency_cpu_ms": {
+        "n_samples": 50,
+        "mean_ms": 93.26,
+        "median_ms": 85.1,
+        "p90_ms": 117.44
+      },
+      "agreement_with_baseline": 1.0,
+      "speedup_vs_baseline": 1.0
+    },
+    "onnx-fp32-640": {
+      "weights": "models/capsule_yolo11n_640.onnx",
+      "imgsz": 640,
+      "file_bytes": 10570566,
+      "accuracy": {
+        "ok": true,
+        "precision": 0.5926,
+        "recall": 0.465,
+        "mAP50": 0.5168,
+        "mAP50_95": 0.3215
+      },
+      "latency_cpu_ms": {
+        "n_samples": 50,
+        "mean_ms": 53.09,
+        "median_ms": 47.89,
+        "p90_ms": 62.75
+      },
+      "agreement_with_baseline": 1.0,
+      "speedup_vs_baseline": 1.757
+    },
+    "onnx-int8-640": {
+      "weights": "models/capsule_yolo11n_640_int8.onnx",
+      "imgsz": 640,
+      "file_bytes": 2998130,
+      "accuracy": {
+        "ok": true,
+        "precision": 0.5525,
+        "recall": 0.4768,
+        "mAP50": 0.4655,
+        "mAP50_95": 0.307
+      },
+      "latency_cpu_ms": {
+        "n_samples": 50,
+        "mean_ms": 779.68,
+        "median_ms": 757.27,
+        "p90_ms": 872.29
+      },
+      "agreement_with_baseline": 0.6458,
+      "speedup_vs_baseline": 0.12
+    },
+    "onnx-fp32-416": {
+      "weights": "models/capsule_yolo11n_416.onnx",
+      "imgsz": 416,
+      "file_bytes": 10473542,
+      "accuracy": {
+        "ok": true,
+        "precision": 0.57,
+        "recall": 0.5213,
+        "mAP50": 0.4973,
+        "mAP50_95": 0.3188
+      },
+      "latency_cpu_ms": {
+        "n_samples": 50,
+        "mean_ms": 29.73,
+        "median_ms": 29.79,
+        "p90_ms": 31.29
+      },
+      "agreement_with_baseline": 0.7125,
+      "speedup_vs_baseline": 3.137
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "generated_utc": "2026-11-02T09:22:08.112774+00:00",
+  "model": "best.pt",
+  "model_bytes": 5481370,
+  "model_params_M": 2.59,
+  "model_params_exact": 2591400,
+  "model_layers": 182,
+  "model_GFLOPs": 6.5,
+  "model_GFLOPs_416": 2.7,
+  "device": "cpu",
+  "torch_version": "2.13.0+cpu",
+  "platform": "Windows-11-10.0.26300-SP0",
+  "processor": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD",
+  "dataset": {
+    "train_images": 840,
+    "valid_images": 80,
+    "test_images": 40,
+    "nc": 8,
+    "names": [
+      "Normal-Z-Line",
+      "Polyps",
+      "dyed-lifted-polyps",
+      "dyed-resection-margins",
+      "esophagitis",
+      "normal-cecum",
+      "normal-pylorus",
+      "ulcerative-colities"
+    ]
+  },
+  "overall": {
+    "precision": 0.5571,
+    "recall": 0.5441,
+    "mAP50": 0.5163,
+    "mAP50_95": 0.3349,
+    "fitness": 0.3349
+  },
+  "per_class": [
+    {
+      "class_id": 0,
+      "class_name": "Normal-Z-Line",
+      "precision": 0.5424,
+      "recall": 0.8,
+      "ap50": 0.7718,
+      "ap": 0.5621
+    },
+    {
+      "class_id": 1,
+      "class_name": "Polyps",
+      "precision": 0.7175,
+      "recall": 0.8,
+      "ap50": 0.7205,
+      "ap": 0.5541
+    },
+    {
+      "class_id": 2,
+      "class_name": "dyed-lifted-polyps",
+      "precision": 0.785,
+      "recall": 0.7143,
+      "ap50": 0.715,
+      "ap": 0.4421
+    },
+    {
+      "class_id": 3,
+      "class_name": "dyed-resection-margins",
+      "precision": 0.6017,
+      "recall": 0.6667,
+      "ap50": 0.6294,
+      "ap": 0.3867
+    },
+    {
+      "class_id": 4,
+      "class_name": "esophagitis",
+      "precision": 0.6231,
+      "recall": 0.6,
+      "ap50": 0.5554,
+      "ap": 0.3321
+    },
+    {
+      "class_id": 5,
+      "class_name": "normal-cecum",
+      "precision": 0.5614,
+      "recall": 0.2614,
+      "ap50": 0.271,
+      "ap": 0.1088
+    },
+    {
+      "class_id": 6,
+      "class_name": "normal-pylorus",
+      "precision": 0.2975,
+      "recall": 0.2886,
+      "ap50": 0.231,
+      "ap": 0.1375
+    },
+    {
+      "class_id": 7,
+      "class_name": "ulcerative-colities",
+      "precision": 0.3287,
+      "recall": 0.2222,
+      "ap50": 0.2368,
+      "ap": 0.1561
+    }
+  ],
+  "latency_cpu_ms": {
+    "n_samples": 50,
+    "mean_ms": 75.99,
+    "median_ms": 76.2,
+    "p90_ms": 81.65,
+    "min_ms": 65.51,
+    "max_ms": 93.58
+  }
+}

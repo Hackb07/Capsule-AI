@@ -1,0 +1,14 @@
+path: E:/Capsule-AI/data
+train: train/images
+val: valid/images
+test: test/images
+nc: 8
+names:
+  - Normal-Z-Line
+  - Polyps
+  - dyed-lifted-polyps
+  - dyed-resection-margins
+  - esophagitis
+  - normal-cecum
+  - normal-pylorus
+  - ulcerative-colities

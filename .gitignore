@@ -22,7 +22,20 @@ outputs/annotated/*
 !outputs/annotated/.gitkeep
 logs/*.log
 
+# Tool caches (regenerable)
+.uv-cache/
+.uv-python/
+.ultralytics/
+Ultralytics/
+.mpl-cache/
+matplotlib-*/
+runs/
+outputs/edge/
+outputs/yolo-runs/
+
 # Large model files
+*.onnx
+!models/capsule_yolo11n_*.onnx
 
 data/
 # Node
